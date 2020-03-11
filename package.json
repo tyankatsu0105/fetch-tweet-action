@@ -1,0 +1,54 @@
+{
+  "name": "boilerplate-create-action",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Boilerplate for creating github action",
+  "keywords": [
+    "actions",
+    "node",
+    "setup"
+  ],
+  "homepage": "https://github.com/tyankatsu0105/boilerplate-create-action#readme",
+  "bugs": {
+    "url": "https://github.com/tyankatsu0105/boilerplate-create-action/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tyankatsu0105/boilerplate-create-action.git"
+  },
+  "license": "MIT",
+  "author": "tyankatsu <frips.ryilsufupe+dev@gmail.com> (https://tyankatsu.netlify.com/)",
+  "main": "lib/main.js",
+  "scripts": {
+    "build": "tsc",
+    "format": "prettier --write **/*.ts",
+    "format-check": "prettier --check **/*.ts",
+    "lint": "eslint src/**/*.ts",
+    "pack": "ncc build",
+    "test": "jest",
+    "all": "npm run build && npm run format && npm run lint && npm run pack && npm test",
+    "commit": "git-cz",
+    "precommit": "lint-staged"
+  },
+  "dependencies": {
+    "@actions/core": "^1.2.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.25",
+    "@types/node": "^13.1.6",
+    "@typescript-eslint/parser": "^2.16.0",
+    "@zeit/ncc": "^0.21.0",
+    "commitizen": "^4.0.3",
+    "cz-conventional-changelog": "^3.0.2",
+    "eslint": "^6.8.0",
+    "eslint-plugin-github": "^3.4.0",
+    "eslint-plugin-jest": "^23.6.0",
+    "jest": "^24.9.0",
+    "jest-circus": "^24.9.0",
+    "js-yaml": "^3.13.1",
+    "lint-staged": "^9.5.0",
+    "prettier": "^1.19.1",
+    "ts-jest": "^24.3.0",
+    "typescript": "^3.7.4"
+  }
+}

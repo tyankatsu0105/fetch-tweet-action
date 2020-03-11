@@ -1,0 +1,10 @@
+name: 'boilerplate-create-action'
+description: 'Boilerplate for creating github action'
+author: 'tyankatsu'
+inputs:
+  myInput:              # change this
+    description: 'input description here'
+    default: 'default value if applicable'
+runs:
+  using: 'node13'
+  main: 'dist/index.js'
